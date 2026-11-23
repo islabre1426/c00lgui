@@ -15,9 +15,9 @@ export class MainHeader extends LitElement {
 
             <nav>
                 <button id="nav-prev">&lt;</button>
-                <cg-seperator vertical>
+                <cg-seperator vertical></cg-seperator>
                 <span id="nav-indicator">${this.firstPageName}</span>
-                <cg-seperator vertical>
+                <cg-seperator vertical></cg-seperator>
                 <button id="nav-next">&gt;</button>
             </nav>
         `;

@@ -5,7 +5,9 @@ import { customElement } from "lit/decorators.js";
 export class Sidebar extends LitElement {
     render() {
         return html`
-            <section id="sidebar-main"></section>
+            <section id="sidebar-main">
+                <slot></slot>
+            </section>
             <button id="sidebar-button">&gt;</button>
         `;
     }
