@@ -4,6 +4,10 @@ import { customElement, property } from "lit/decorators.js";
 @customElement("cg-seperator")
 export class Seperator extends LitElement {
     static styles = css`
+        :host {
+            height: 100%;
+        }
+
         hr {
             border: 0;
             margin: 0;

@@ -10,26 +10,25 @@ export class MainHeader extends LitElement {
 
         nav {
             display: grid;
-            grid-template-columns: 1fr 0.3rem 2fr 0.3rem 1fr;
+            grid-template-columns: 1fr var(--border-width) 2fr var(--border-width) 1fr;
 
             border: var(--border);
             border-width: var(--border-width) 0;
+
+            align-items: center;
         }
 
         div {
-            margin: 0.15rem;
+            padding: var(--padding);
         }
     `;
-
-    @property({ attribute: "app-name" })
-    appName: string = "";
 
     @property({ attribute: "first-page-name" })
     firstPageName: string = "";
 
     render() {
         return html`
-            <div id="title">${this.appName}</div>
+            <div id="title">${document.title}</div>
 
             <nav>
                 <cg-button name="nav-prev">&lt;</cg-button>

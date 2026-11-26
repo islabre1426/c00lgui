@@ -12,6 +12,7 @@ export class App extends LitElement {
         :host {
             --border-width: 0.3rem;
             --border: var(--border-width) solid red;
+            --padding: 0.3rem;
 
             display: flex;
             height: 100vh;

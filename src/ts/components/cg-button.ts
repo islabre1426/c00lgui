@@ -13,6 +13,7 @@ export class Button extends LitElement {
             color: inherit;
 
             border: 0;
+            padding: var(--padding);
         }
 
         button:hover {
@@ -23,11 +24,9 @@ export class Button extends LitElement {
         button.expand {
             height: 100%;
             border-left: var(--border);
+            padding: 0 calc(var(--padding) * 2);
         }
     `;
-
-    @property()
-    name: string = "";
 
     @property({ type: Boolean })
     expand: boolean = false;
