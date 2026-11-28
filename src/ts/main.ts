@@ -1,7 +1,6 @@
 import './components/cg-app';
 import './components/cg-main';
 
-import './components/cgm-header';
 import './components/cgm-content';
 import './components/cgm-footer';
 
