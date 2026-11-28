@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tauri-apps/api": "^2.12.5",
     "lit": "^3.3.3"
   },
   "devDependencies": {

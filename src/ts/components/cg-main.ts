@@ -6,7 +6,7 @@ import type { MainContent } from "./cgm-content";
 export class Main extends LitElement {
     static styles = css`
         :host {
-            width: 70%;
+            width: 800px;
             height: 100%;
 
             display: flex;
